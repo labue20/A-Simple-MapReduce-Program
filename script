@@ -1,0 +1,34 @@
+#!/bin/bash
+# My first Script
+
+#sampleText.txt= $1
+
+echo "This script runs a Simple Map Reduce program"
+
+#change the directory to the specific file folder
+ cd /Users/labuew/Desktop/wordCountProgram
+
+#this compile a java program
+javac Splitter.java
+javac Stemmer02.java
+javac Mapper.java
+javac Mapper03.java
+javac Sender.java
+echo "hello world " > newData.txt
+
+#excecute the compile files and pipe the output of one into the input of another
+(java Splitter "sampleText.txt" "12" "1" | java Stemmer02 | java Mapper03 | java Sender "127.0.0.1" "5000") & pid1=$!
+(java Splitter "sampleText.txt" "12" "2" | java Stemmer02 | java Mapper03 | java Sender "127.0.0.1" "5000") & pid2=$!
+(java Splitter "sampleText.txt" "12" "3" | java Stemmer02 | java Mapper03 | java Sender "127.0.0.1" "5000") & pid3=$!
+(java Splitter "sampleText.txt" "12" "4" | java Stemmer02 | java Mapper03 | java Sender "127.0.0.1" "5000") & pid4=$!
+wait $pid1
+wait $pid2
+wait $pid3
+wait $pid4
+
+echo "hello"
+
+
+
+
+
