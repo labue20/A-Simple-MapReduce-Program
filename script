@@ -14,8 +14,6 @@ javac Stemmer02.java
 javac Mapper.java
 javac Mapper03.java
 
-echo "hello world " > newData.txt
-
 #excecute the compile files and pipe the output of one into the input of another
 java Splitter "sampleText.txt" "10" "1" | java Stemmer02 | java Mapper03 > newData.txt
 #java Splitter "sampleText.txt" "10" "2" > newData.txt
