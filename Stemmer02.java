@@ -24,7 +24,7 @@ public class Stemmer02 {
                 "when","where","who","will","with", "but","and", "from",
                 "its","has", "only", "It","also","not"};
 
-        String wordList = Arrays.toString(stopWords);
+        String wordList = Arrays.toString(stopWords); //an array list to store the stopWords
 
         //this reads a text file
 	/*	BufferedReader br = new BufferedReader(new
@@ -66,7 +66,7 @@ public class Stemmer02 {
 
             StringBuilder  sb = new StringBuilder();
 
-            Reader reader = new InputStreamReader(System.in);
+            Reader reader = new InputStreamReader(System.in);//reads input from standard input
             BufferedReader br = new BufferedReader(reader);
             br.readLine();
 
@@ -78,7 +78,7 @@ public class Stemmer02 {
 
 
                 //remove spaces
-                String []allWords = line.trim().split(" ");
+                String []allWords = line.trim().split(" ");//remove spaces from the textfile
                 //compares the stopwords with the textfile and remove stopwords from the text file
                 for(String word: allWords) {
                     if(!wordList.contains(word)) {
@@ -87,9 +87,9 @@ public class Stemmer02 {
                     }
                 }
             }
-            String result = sb.toString().trim();
+            String result = sb.toString().trim();//trim the output
 
-            System.out.println(result);
+            System.out.println(result);// this print the result to the console or as standard output
 
 
             //System.out.println(sb);;
