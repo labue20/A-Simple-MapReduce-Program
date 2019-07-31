@@ -1,5 +1,7 @@
 # A-Simple-MapReduce-Program
-This program implement a simple word count program using map-reduce programming paradigm without using the Hadoop framework
+This program implement a simple word count program using map-reduce programming paradigm without using the Hadoop framework.
+
+In this programming assignment, you will implement a simple word count program using map-reduce programming paradigm. You are not supposed to use an existing map-reduce framework (e.g. Hadoop).Instead, this project is intended to make you exercise your operating system skills by directly implementing this special case. More concretely, you will implement all the components of a real map-reduce framework,but specializing the components simplifies the problems and make them more manageable (and doable in a few days).
 
 The program is broken down into ;
 
