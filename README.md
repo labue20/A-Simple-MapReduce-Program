@@ -1,7 +1,8 @@
 # A-Simple-MapReduce-Program
 
-**Course Project for CS4348 - Operating System Concepts Summer 2019*
-**University of Texas at Dallas*
+*Course Project for CS4348 - Operating System Concepts Summer 2019*
+
+*University of Texas at Dallas*
 
 This program implement a simple word count program using map-reduce programming paradigm without using the Hadoop framework.
 
