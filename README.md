@@ -1,6 +1,6 @@
 # A-Simple-MapReduce-Program
 
-**_Course Project for CS4348 - Operating System Concepts Summer 2019_**
+**_Course Project for CS/SE 4348 - Operating System Concepts Summer 2019_**
 **_University of Texas at Dallas_**
 
 *Group Members*
